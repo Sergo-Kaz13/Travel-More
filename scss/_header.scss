@@ -1,0 +1,109 @@
+.header {
+  background: url(../images/header_bg.jpg) center center/cover no-repeat;
+  &__block {
+    display: flex;
+    flex-direction: column;
+    min-height: 740px;
+  }
+  &__content {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__title {
+    font-size: 48px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.1;
+  }
+  &__subtitle {
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    line-height: 1.182;
+    letter-spacing: 4.5px;
+    margin-bottom: 49px;
+  }
+}
+.search {
+  position: relative;
+  height: 60px;
+  min-width: 650px;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
+  margin-bottom: 116px;
+  &__input {
+    height: 100%;
+    width: 100%;
+    padding-right: 150px;
+    text-align: center;
+    font-size: 14px;
+    color: rgb(153, 153, 153);
+    line-height: 1.857;
+    outline:none;
+    border: none;
+    transition: .28s;
+    &:hover {
+      cursor: pointer;
+      font-size: 16px;
+      border: none;
+    }
+    &:active {
+      border: none;
+    }
+  }
+  &__btn {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 150px;
+    background-color: rgb(84, 116, 253);
+    text-transform: uppercase;
+    font-size: 19px;
+    font-family: 'Aleo', serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.857;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .28s;
+    &:hover {
+      cursor: pointer;
+      background-color: rgb(107, 134, 252);
+    }
+    &:active {
+      background-color: rgb(59, 95, 252);
+    }
+    &_text {
+      display: inline-block;
+      padding-right: 10px;
+      font-size: 14px;
+    }
+  }
+}
+.scroll {
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    line-height: 1.857;
+    position: relative;
+    &__arow {
+      display: inline-block;
+      position: absolute;
+      bottom: -18px;
+      left: 50%;
+      right: 50%;
+      margin-left: -3.5px;
+      font-size: 7px;
+      transition: .28s;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+    &:hover &__arow {
+    color: rgb(30, 29, 31);
+    }
+}

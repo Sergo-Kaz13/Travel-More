@@ -1,0 +1,42 @@
+.interactive {
+  background-color: rgb(51, 51, 51);
+  &__block {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 337px;
+    padding: 15px;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    &:hover {
+      cursor: pointer;
+    }
+    &:hover .interactive__icon {
+      transform: scale(1.05);
+    }
+  }
+  &__icon {
+    display: inline-block;
+    font-size: 60px;
+    margin-bottom: 20px;
+    transition: .28s;
+    &_dark-blue {
+      color: rgb(84, 116, 253);
+    }
+    &_red {
+      color: rgb(255, 99, 99);
+    }
+    &_blue {
+      color: rgb(0, 162, 255);
+    }
+  }
+  &__text {
+    font-size: 36px;
+    font-family: 'Aleo', serif;
+    margin-bottom: 20px;
+  }
+}

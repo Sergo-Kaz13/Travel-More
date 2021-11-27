@@ -1,0 +1,63 @@
+.choose {
+  background: linear-gradient( rgba(51, 51, 51, 0.9), rgba(51, 51, 51, 0.9) ), url(../images/pexels-photo-134638.jpg) center center/cover no-repeat;
+  &__block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 686px;
+  }
+  &__title {
+    font-size: 36px;
+    font-family: 'Aleo', serif;
+    color: rgb(255, 255, 255);
+    margin-bottom: 60px;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 1.625;
+    margin-bottom: 35px;
+  }
+  &__btn {
+    background-color: rgb(84, 116, 253);
+    min-width: 225px;
+    height: 60px;
+    border: none;
+    font-size: 16px;
+    font-family: 'Aleo', serif;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.625;
+    margin-bottom: 15px;
+    transition: .28s;
+    &:hover {
+      cursor: pointer;
+      background: rgb(255, 255, 255);
+      color: rgb(84, 116, 253);
+      transform: translate(2px, -2px);
+    }
+    &:active {
+      transform: translate(0, 0);
+    }
+  }
+  &__info {
+    max-width: 540px;
+    padding-right: 25px;
+  }
+  &__photo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 470px / 1110px * 100%;
+    &_top {
+      max-width: 350px;
+      overflow: hidden;
+      align-self: flex-start;
+    }
+    &_bottom {
+      max-width: 350px;
+      overflow: hidden;
+      align-self: flex-end;
+    }
+  }
+}
